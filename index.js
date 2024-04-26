@@ -165,28 +165,28 @@ if(typeof MudiExperience == "undefined"){
     
                                 <div class="titleContainer">
                                     <div class="iconTitle">
-                                        <img class="stepMudi step1" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step3falabella.webp">
+                                        <img class="stepMudi step1" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step3Falabella.webp">
                                     </div>
                                     <p class="textInfoMudi">Apunta el teléfono al piso.</p>
                                 </div>
     
                                 <div class="titleContainer">
                                     <div class="iconTitle">
-                                        <img class="stepMudi step2" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step4falabella.webp">
+                                        <img class="stepMudi step2" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step4Falabella.webp">
                                     </div>
                                     <p class="textInfoMudi">Desplaza para visualizar.</p>
                                 </div>
     
                                 <div class="titleContainer">
                                     <div class="iconTitle">
-                                        <img class="stepMudi step3" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step2falabella.webp">
+                                        <img class="stepMudi step3" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step2Falabella.webp">
                                     </div>
                                     <p class="textInfoMudi">Amplia y detalla el producto.</p>
                                 </div>
     
                                 <div class="titleContainer">
                                     <div class="iconTitle">
-                                        <img class="stepMudi step4" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step1falabella.webp">
+                                        <img class="stepMudi step4" src="https://cdn.jsdelivr.net/gh/RodriguezJose92/falabella@latest/assets/step1Falabella.webp">
                                     </div>
                                     <p class="textInfoMudi">Toca dos veces para restablecer.</p>
                                 </div>
