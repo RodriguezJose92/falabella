@@ -327,7 +327,7 @@ if(typeof MudiExperience == "undefined"){
 
     const mudiExperience = new MudiExperience();
     setTimeout(()=>{
-        mudiExperience.experienceOn( 3863161 , document.body.querySelector('.pdp-image-section'));
+        mudiExperience.experienceOn( document.body.querySelector('[data-id]').getAttribute('data-id') , document.body.querySelector('.pdp-image-section'));
     },3000)
     
 };
