@@ -328,6 +328,7 @@ if(typeof MudiExperience == "undefined"){
     const mudiExperience = new MudiExperience();
     setTimeout(()=>{
         mudiExperience.experienceOn( document.body.querySelector('[data-id]').getAttribute('data-id') , document.body.querySelector('.pdp-image-section'));
+        console.log('Probando para uso de CDN')
     },3000)
     
 };
