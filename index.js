@@ -1,3 +1,4 @@
+console.log('say hello from mudi')
 /** TEST A-B */
 if(typeof MudiExperience == "undefined"){
     
