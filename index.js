@@ -277,6 +277,17 @@ if(typeof MudiExperience == "undefined"){
                 subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
                 sistemaOperativo: OSdevice
             })
+
+            console.log(
+                {
+                    event: `Evento de interaccion ${eventName}`,
+                    valorMudi: 1,
+                    sku: this.skuNumber,
+                    category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
+                    subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
+                    sistemaOperativo: OSdevice
+                }
+            )
         };
     
         /** viewer event Mudi GTM  */
@@ -295,6 +306,17 @@ if(typeof MudiExperience == "undefined"){
                 subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
                 sistemaOperativo: OSdevice
             })
+
+            console.log(
+                {
+                    event: `visualizacion_botones`,
+                    valorMudi: 1,
+                    sku: this.skuNumber,
+                    category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
+                    subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
+                    sistemaOperativo: OSdevice
+                }                
+            )
         };
     
         /** verifyExperience  ✔️ */
