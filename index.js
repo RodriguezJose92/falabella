@@ -324,6 +324,8 @@ if(typeof MudiExperience == "undefined"){
         
             /** Verify father Container */
             fatherContainer && (this.fatherContainer = fatherContainer);
+
+            console.log({ fatherContainer })
     
             /** Response Mudi server */
             await this.conectServer(skuNumber);
@@ -350,10 +352,11 @@ if(typeof MudiExperience == "undefined"){
 
     const mudiExperience = new MudiExperience();
     setTimeout(()=>{
-        mudiExperience.experienceOn( document.body.querySelector('[data-id]').getAttribute('data-id') , document.body.querySelector('.pdp-image-section'));
+        mudiExperience.experienceOn(
+            document.body.querySelector('[data-id]').getAttribute('data-id'),
+            document.body.querySelector('.pdp-image-section') || document.body.querySelector('.image-gallery-headline__media')
+        );
         console.log('Probando para uso de CDN')
     },3000)
     
 };
-
-
