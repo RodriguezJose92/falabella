@@ -354,7 +354,7 @@ if(typeof MudiExperience == "undefined"){
     setTimeout(()=>{
         mudiExperience.experienceOn(
             document.body.querySelector('[data-id]').getAttribute('data-id'),
-            document.body.querySelector('.pdp-image-section') || document.body.querySelector('.image-gallery-headline__media')
+            document.body.querySelector('.pdp-image-section') || document.body.querySelector('.modern-image-gallery__main-image')
         );
         console.log('Probando para uso de CDN')
     },3000)
