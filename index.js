@@ -260,6 +260,12 @@ if(typeof MudiExperience == "undefined"){
             return tooltip;
         };
     
+        /** Breadcrumb seguro: Falabella cambia las clases y sin breadcrumb la analítica no debe romper la experiencia */
+        breadcrumb(i){
+            const item = document.body.querySelector('[class*="Breadcrumbs-module_breadcrumb"]')?.children[i]?.children[0];
+            return item ? item.innerHTML : 'Sin categoria';
+        };
+
         /** Send Evnt Interacción  ✔️ */
         sendEventInteraction(eventName){
     
@@ -273,8 +279,8 @@ if(typeof MudiExperience == "undefined"){
                 event: `Evento de interaccion ${eventName}`,
                 valorMudi: 1,
                 sku: this.skuNumber,
-                category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
-                subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
+                category: this.breadcrumb(1),
+                subCategory: this.breadcrumb(2),
                 sistemaOperativo: OSdevice
             })
 
@@ -283,8 +289,8 @@ if(typeof MudiExperience == "undefined"){
                     event: `Evento de interaccion ${eventName}`,
                     valorMudi: 1,
                     sku: this.skuNumber,
-                    category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
-                    subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
+                    category: this.breadcrumb(1),
+                    subCategory: this.breadcrumb(2),
                     sistemaOperativo: OSdevice
                 }
             )
@@ -302,8 +308,8 @@ if(typeof MudiExperience == "undefined"){
                 event: `visualizacion_botones`,
                 valorMudi: 1,
                 sku: this.skuNumber,
-                category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
-                subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
+                category: this.breadcrumb(1),
+                subCategory: this.breadcrumb(2),
                 sistemaOperativo: OSdevice
             })
 
@@ -312,8 +318,8 @@ if(typeof MudiExperience == "undefined"){
                     event: `visualizacion_botones`,
                     valorMudi: 1,
                     sku: this.skuNumber,
-                    category: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[1].children[0].innerHTML,
-                    subCategory: document.body.querySelector('.Breadcrumbs-module_breadcrumb__3lLwJ').children[2].children[0].innerHTML,
+                    category: this.breadcrumb(1),
+                    subCategory: this.breadcrumb(2),
                     sistemaOperativo: OSdevice
                 }                
             )
@@ -353,7 +359,7 @@ if(typeof MudiExperience == "undefined"){
     const mudiExperience = new MudiExperience();
     setTimeout(()=>{
         mudiExperience.experienceOn(
-            document.body.querySelector('[data-id]').getAttribute('data-id'),
+            (document.body.querySelector('.variant-id[data-id]') || document.body.querySelector('[data-id]')).getAttribute('data-id'),
             document.body.querySelector('.pdp-image-section') || document.body.querySelector('.modern-image-gallery__main-image')
         );
         console.log('Probando para uso de CDN')
