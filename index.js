@@ -262,8 +262,8 @@ if(typeof MudiExperience == "undefined"){
     
         /** Breadcrumb seguro: Falabella cambia las clases y sin breadcrumb la analítica no debe romper la experiencia */
         breadcrumb(i){
-            const item = document.body.querySelector('[class*="Breadcrumbs-module_breadcrumb"]')?.children[i]?.children[0];
-            return item ? item.innerHTML : 'Sin categoria';
+            const item = document.body.querySelector('[class*="Breadcrumbs-module_breadcrumb"]')?.querySelectorAll('a')[i];
+            return item ? item.innerText.trim() : 'Sin categoria';
         };
 
         /** Send Evnt Interacción  ✔️ */
